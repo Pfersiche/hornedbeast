@@ -5,7 +5,11 @@ export default function Main({ data }) {
   return (
     <div className="main-div">
       {data.map((beast) => (
-        <Hornedbeast title={beast.title} imgUrl={beast.image_url} />
+        <Hornedbeast
+          title={beast.title}
+          imgUrl={beast.image_url}
+          beast={beast}
+        />
       ))}
     </div>
   );

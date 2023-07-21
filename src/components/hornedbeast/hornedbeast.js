@@ -12,7 +12,7 @@ export default function Hornedbeast({ title, imgUrl, description }) {
   return (
     <div>
       <h2>{title}</h2>
-      <img src={imgUrl} />
+      <img src={imgUrl} onClick={() => handleModal(beast)} />
       <p>{description}</p>
       <button onClick={handleLike}> Likes:🤩 {likes} </button>
     </div>
